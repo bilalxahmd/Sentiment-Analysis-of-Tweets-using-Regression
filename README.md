@@ -27,12 +27,12 @@ Preprocessing steps include:
 ## Exploratory Data Analysis (EDA)
 
 ### Entity Distribution
-![Entities Distribution](#)
+![Entities Distribution](plt1.png)
 
 - **Insight**: The bar plot shows the distribution of entities within the dataset, highlighting which entities are most frequently mentioned. The counts suggest a balanced dataset across different entities, with the most frequent entities slightly above the average.
 
 ### Sentiment Distribution
-![Sentiment Distribution](#)
+![Sentiment Distribution](plt2.png)
 
 - **Insight**: The pie chart reveals the proportion of each sentiment in the dataset. Positive and Negative sentiments have significant representation, while Neutral and Irrelevant categories are less frequent. This imbalance could influence the model's ability to accurately predict less frequent categories.
 
@@ -90,29 +90,25 @@ This analysis provides valuable insights into brand perception and public opinio
 ### Word Clouds for Sentiments
 
 #### Positive Sentiment
-![Positive Word Cloud](#)
+![Positive Word Cloud](plt3.png)
 - **Insight**: Common words in positive tweets include expressions of satisfaction, approval, and joy, such as "love," "great," and "happy." These reflect the overall positive tone expected in this category.
 
 #### Negative Sentiment
-![Negative Word Cloud](#)
+![Negative Word Cloud](plt4.png)
 - **Insight**: Negative sentiment word clouds highlight terms like "bad," "hate," and "worst," indicating dissatisfaction and complaints. This visualization aligns with the expected language in negative tweets.
 
 #### Neutral Sentiment
-![Neutral Word Cloud](#)
+![Neutral Word Cloud](plt5.png)
 - **Insight**: Words in the neutral category are often factual or descriptive without a strong opinion, such as "today," "meeting," or "report." The overlap with other categories can make these tweets challenging to classify.
 
 #### Irrelevant Sentiment
-![Irrelevant Word Cloud](#)
+![Irrelevant Word Cloud](plt6.png)
 - **Insight**: Irrelevant tweets contain diverse language, often unrelated to the entities or topics of interest. Common words may not align closely with typical sentiment expressions, which complicates classification.
 
 ### Entity and Sentiment Distribution
-![Entity and Sentiment Distribution](#)
+![Entity and Sentiment Distribution](plt7.png)
 - **Insight**: This bar plot shows the count of tweets per entity across different sentiments, highlighting entities with predominantly positive or negative feedback. It helps identify which brands or topics receive mixed reactions.
 
 ## Conclusion
 
-This sentiment analysis project demonstrates the capability of logistic regression in classifying tweet sentiments. Although the model performs reasonably well, there is room for improvement, particularly in handling imbalanced datasets and overlapping sentiment categories. Future work could involve more advanced models like neural networks or transformer-based approaches (e.g., BERT) for enhanced performance.
-
-## Acknowledgments
-
-Special thanks to the open-source tools and libraries used in this project, including Pandas, Scikit-learn, Matplotlib, and others, for providing robust frameworks for data analysis and visualization.
+This sentiment analysis project demonstrates the capability of logistic regression in classifying tweet sentiments. Although the model performs reasonably well, there is room for improvement, particularly in handling imbalanced datasets and overlapping sentiment categories. Future work could involve more advanced models like neural networks or transformer-based approaches for enhanced performance.
